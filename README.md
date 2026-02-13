@@ -1,4 +1,4 @@
-# Y_IoUOD: YOLO-E Object Extraction with IoU-based NMS
+# IoUOD: YOLO-E Object Extraction with IoU-based NMS
 
 Extract individual objects from images using YOLO-E segmentation with Non-Maximum Suppression (NMS) based on IoU threshold.
 

@@ -7,8 +7,6 @@ Extract individual objects from images using YOLO-E segmentation with Non-Maximu
 - **YOLO-E Segmentation**: State-of-the-art object detection and segmentation
 - **IoU-based NMS**: Remove overlapping detections with configurable IoU threshold
 - **Clean Extraction**: Extract objects with white background masking
-- **Flexible Interface**: Command-line script and interactive Jupyter notebook
-- **Batch Processing**: Save individual objects or visualization grids
 
 ## Quick Start
 

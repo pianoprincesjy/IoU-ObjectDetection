@@ -39,10 +39,6 @@ python extract_objects.py \
 python extract_objects.py --img image.jpg --gpu 5
 ```
 
-### Jupyter Notebook
-
-Open `demo.ipynb` for an interactive demonstration with visualizations.
-
 ## Arguments
 
 | Argument | Type | Default | Description |
@@ -80,13 +76,6 @@ output/
    - Apply segmentation mask
    - Set background to white
 4. **Output**: Save visualization and/or individual objects
-
-## IoU Threshold Guide
-
-- **0.3-0.4**: Aggressive filtering, keeps fewer objects
-- **0.5**: Balanced (recommended for most cases)
-- **0.6-0.7**: Conservative filtering, keeps more objects
-- **0.8+**: Minimal filtering, only removes highly overlapping objects
 
 ## Examples
 
@@ -126,32 +115,3 @@ On first run, YOLO-E model will be automatically downloaded. Supported models:
 - `yolo11m-seg.pt` (medium)
 - `yolo11l-seg.pt` (large, default)
 - `yolo11x-seg.pt` (extra large, most accurate)
-
-## GPU Configuration
-
-Set GPU device using `--gpu` argument:
-```bash
-python extract_objects.py --img image.jpg --gpu 2  # Use GPU 2
-```
-
-Or set via environment variable:
-```bash
-CUDA_VISIBLE_DEVICES=3 python extract_objects.py --img image.jpg
-```
-
-## Notes
-
-- Works best with clear, well-separated objects
-- Higher IoU threshold = more lenient (keeps more overlapping objects)
-- Lower confidence threshold = detect more objects (including false positives)
-- Adjust padding to control crop area around objects
-
-## License
-
-For research and educational purposes.
-
-## Citation
-
-If you use this code in your research, please cite:
-- YOLO-E: Ultralytics YOLO11
-- Your publication (when available)

@@ -34,9 +34,6 @@ python extract_objects.py \
     --gpu 0 \
     --output results \
     --save-individual
-
-# Use specific GPU
-python extract_objects.py --img image.jpg --gpu 5
 ```
 
 ## Arguments
@@ -76,26 +73,6 @@ output/
    - Apply segmentation mask
    - Set background to white
 4. **Output**: Save visualization and/or individual objects
-
-## Examples
-
-### Example 1: Extract objects from image
-
-```bash
-python extract_objects.py --img sample.jpg --conf 0.3 --iou 0.5
-```
-
-### Example 2: High confidence with aggressive NMS
-
-```bash
-python extract_objects.py --img image.jpg --conf 0.5 --iou 0.3 --save-individual
-```
-
-### Example 3: Conservative filtering with more padding
-
-```bash
-python extract_objects.py --img photo.png --iou 0.7 --padding 30
-```
 
 ## Requirements
 
